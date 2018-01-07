@@ -151,7 +151,6 @@ $(document).ready(() => {
           '</div>' +
           '<div class= "col-md-6">'+
           '<h3>' + allCharacters[i][j].name + '</h3>' +
-          '<p>School: ' + allCharacters[i][j].school + '</p>' +
           '<p>City: ' + allCharacters[i][j].city + '</p>' +
           '</div>' +
           '</div>')

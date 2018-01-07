@@ -40,7 +40,7 @@ $('.btn-gossip').click(function(){
     * se borra inmediatamente todo el contenido de breaking bad y se genera el de gossip girl
     * cada uno en su div correspondiente
     */
-    $('.breaking, .how, .stranger, .all').children().remove(); //a los divs con esas clases les remueve todos sus hijos
+    $('.breaking, .how, .stranger, .all').empty(); //a los divs con esas clases les remueve todos sus hijos
     /*
     * Le indicamos que en cada iteración, es decir cuando pase por cada personaje, genera la
     * siguiente estructura por cada uno, sacando así el dato de nombre, colegio, ciudad y foto,
@@ -68,7 +68,7 @@ $('.btn-gossip').click(function(){
 
 $('.btn-breaking').click(function(){
   for (var i = 0; i < breaking.length; i++) {
-    $('.gossip, .how, .stranger, .all').children().remove();
+    $('.gossip, .how, .stranger, .all').empty();
     $('.breaking').append('<div class="row character">' +
                             '<div class= "col-md-6 text-center">'+
                               '<img src="assets/' + breaking[i].picture + '">' +
@@ -83,7 +83,7 @@ $('.btn-breaking').click(function(){
 
 $('.btn-how').click(function(){
   for (var i = 0; i < howtoget.length; i++) {
-    $('.gossip, .breaking, .stranger, .all').children().remove();
+    $('.gossip, .breaking, .stranger, .all').empty();
     $('.how').append('<div class="row character">' +
                         '<div class= "col-md-6 text-center">'+
                           '<img src="assets/' + howtoget[i].picture + '">' +
@@ -98,7 +98,7 @@ $('.btn-how').click(function(){
 
 $('.btn-stranger').click(function(){
   for (var i = 0; i < stranger.length; i++) {
-    $('.gossip, .breaking, .how, .all').children().remove();
+    $('.gossip, .breaking, .how, .all').empty();
     $('.stranger').append('<div class="row character">' +
                         '<div class= "col-md-6 text-center">'+
                           '<img src="assets/' + stranger[i].picture + '">' +
@@ -120,7 +120,7 @@ $('.btn-stranger').click(function(){
 var allCharacters = [];
 
 $('.btn-all').click(function() {
-  $('.gossip, .breaking, .how, .stranger').children().remove();
+  $('.gossip, .breaking, .how, .stranger').empty();
 /*
 * Debemos recorrer cada de uno de los objetos presente en la data (gossip, breakingbad,
 * howtoget y stranger) y pushear al array allCharacters todos los objetos pertenecientes a

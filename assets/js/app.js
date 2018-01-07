@@ -40,7 +40,7 @@ $('.btn-gossip').click(function(){
     * se borra inmediatamente todo el contenido de breaking bad y se genera el de gossip girl
     * cada uno en su div correspondiente
     */
-    $('.breaking, .how').children().remove(); //a los divs con esas clases les remueve todos sus hijos
+    $('.breaking, .how, .stranger, .all').children().remove(); //a los divs con esas clases les remueve todos sus hijos
     /*
     * Le indicamos que en cada iteración, es decir cuando pase por cada personaje, genera la
     * siguiente estructura por cada uno, sacando así el dato de nombre, colegio, ciudad y foto,
@@ -68,7 +68,7 @@ $('.btn-gossip').click(function(){
 
 $('.btn-breaking').click(function(){
   for (var i = 0; i < breaking.length; i++) {
-    $('.gossip, .how').children().remove();
+    $('.gossip, .how, .stranger, .all').children().remove();
     $('.breaking').append('<div class="row character">' +
                             '<div class= "col-md-6 text-center">'+
                               '<img src="assets/' + breaking[i].picture + '">' +
@@ -83,7 +83,7 @@ $('.btn-breaking').click(function(){
 
 $('.btn-how').click(function(){
   for (var i = 0; i < howtoget.length; i++) {
-    $('.gossip, .breaking').children().remove();
+    $('.gossip, .breaking, .stranger, .all').children().remove();
     $('.how').append('<div class="row character">' +
                         '<div class= "col-md-6 text-center">'+
                           '<img src="assets/' + howtoget[i].picture + '">' +
@@ -98,7 +98,7 @@ $('.btn-how').click(function(){
 
 $('.btn-stranger').click(function(){
   for (var i = 0; i < stranger.length; i++) {
-    $('.gossip, .breaking, .how').children().remove();
+    $('.gossip, .breaking, .how, .all').children().remove();
     $('.stranger').append('<div class="row character">' +
                         '<div class= "col-md-6 text-center">'+
                           '<img src="assets/' + stranger[i].picture + '">' +

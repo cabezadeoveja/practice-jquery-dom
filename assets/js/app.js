@@ -10,9 +10,6 @@ $(document).ready(() => {
   * console.log(data.breakingbad.characters);
   * console.log(data.howtoget.characters);
   * console.log(data.stranger.characters);
-  */
-
-  /*
   * Genero las variables donde guardaré el acceso a characters de cada uno de los objetos (series)
   * ¿por qué hago esto? para que cuando lo utilice en el for no me maree tanto texto :)
   * Es visualmente más ordenado y entendible

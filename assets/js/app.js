@@ -18,7 +18,6 @@ $(document).ready(() => {
   var breaking = data.breakingbad.characters;
   var howtoget = data.howtoget.characters;
   var stranger = data.stranger.characters;
-
   /*
   * Ahora comenzamos con el contenido. Cuando se le haga click al botón de Gossip girl,
   * mostraremos sus personajes desde jquery y la data proporcionada. Para eso creamos el
